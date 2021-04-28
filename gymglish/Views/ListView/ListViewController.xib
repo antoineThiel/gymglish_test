@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListViewController" customModule="gymglish" customModuleProvider="target">
+            <connections>
+                <outlet property="appleLink" destination="Tur-AN-cY0" id="gdk-qX-vYJ"/>
+                <outlet property="gymglishLink" destination="9ce-qN-2zS" id="Jda-KG-XVr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wordButton" destination="2Fc-M7-nQt" id="rVZ-5P-jTw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ce-qN-2zS">
+                    <rect key="frame" x="167.5" y="239.5" width="79" height="35"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Gymglish">
+                                <attributes>
+                                    <color key="NSColor" systemColor="systemGray2Color"/>
+                                    <font key="NSFont" metaFont="system" size="19"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="webViewGymglish:" destination="-1" eventType="touchUpInside" id="7VD-ne-ZLy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Fc-M7-nQt">
+                    <rect key="frame" x="128" y="304.5" width="158" height="35"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Word of the month">
+                                <attributes>
+                                    <color key="NSColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <font key="NSFont" metaFont="system" size="19"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="webViewWord:" destination="-1" eventType="touchUpInside" id="VKI-BL-ypO"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our websites" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYN-Gf-pBJ">
+                    <rect key="frame" x="130" y="144" width="154" height="25.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <color key="textColor" systemColor="systemGray2Color"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tur-AN-cY0">
+                    <rect key="frame" x="168" y="369.5" width="78" height="35"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Our apps">
+                                <attributes>
+                                    <color key="NSColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <font key="NSFont" metaFont="system" size="19"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="webViewApple:" destination="-1" eventType="touchUpInside" id="Ihm-s8-DSZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="2Fc-M7-nQt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4yf-Ii-kHS"/>
+                <constraint firstItem="SYN-Gf-pBJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="130" id="Ars-im-bcR"/>
+                <constraint firstItem="Tur-AN-cY0" firstAttribute="top" secondItem="2Fc-M7-nQt" secondAttribute="bottom" constant="30" id="MCS-fn-OQq"/>
+                <constraint firstItem="9ce-qN-2zS" firstAttribute="top" secondItem="SYN-Gf-pBJ" secondAttribute="bottom" constant="70" id="PyL-2N-UVU"/>
+                <constraint firstItem="9ce-qN-2zS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cVn-gK-cFh"/>
+                <constraint firstItem="2Fc-M7-nQt" firstAttribute="top" secondItem="9ce-qN-2zS" secondAttribute="bottom" constant="30" id="eI4-bd-MbU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SYN-Gf-pBJ" secondAttribute="trailing" constant="130" id="lDt-xY-IRK"/>
+                <constraint firstItem="Tur-AN-cY0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="oAZ-1Y-Swi"/>
+                <constraint firstItem="SYN-Gf-pBJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="qAW-op-WzE"/>
+            </constraints>
+            <point key="canvasLocation" x="112" y="89"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
